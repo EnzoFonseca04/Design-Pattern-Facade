@@ -24,7 +24,6 @@ public class Combo {
     }
 
     public double getPrecoTotal() {
-        // TODO: Calcule e retorne a soma dos preços dos três itens
-        return 0.0; // SUBSTITUIR
+        return burger.getPreco() + bebida.getPreco() + sobremesa.getPreco();
     }
 }

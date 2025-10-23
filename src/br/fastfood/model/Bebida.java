@@ -1,13 +1,26 @@
 package br.fastfood.model;
 
 public class Bebida implements ItemCombo {
-    // TODO: Declare os atributos necessários
+    private final String nome;
+    private final double preco;
 
-    // TODO: Implemente o construtor
+    public Bebida(String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
 
-    // TODO: Implemente getNome()
+    @Override
+    public String getNome() {
+        return nome;
+    }
 
-    // TODO: Implemente getPreco()
+    @Override
+    public double getPreco() {
+        return preco;
+    }
 
-    // TODO: Sobrescreva toString() para formatação adequada
+    @Override
+    public String toString() {
+        return String.format("%s (R$ %.2f)", nome, preco);
+    }
 }
